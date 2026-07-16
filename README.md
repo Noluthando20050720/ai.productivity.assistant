@@ -154,8 +154,9 @@ src/
 
 ## Author
 
-Developed as part of an academic project demonstrating the application of Artificial Intelligence to improve workplace productivity.
+**Noluthando Nondumiso Mlangeni**
 
+Final-year BSc Computer Science student (Information Systems major) at the University of the Western Cape.
 ---
 
 ## License
