@@ -78,20 +78,24 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "AI Workplace Productivity Assistant" },
+      { title: "Dashboard — AI Workplace Productivity Assistant" },
       {
         name: "description",
         content:
-          "Generate professional emails, plan your day, and chat with an AI productivity assistant. Session-only, no signup required.",
+          "Your productivity toolkit: write emails, plan your day, and chat with an AI assistant.",
       },
-      { property: "og:title", content: "AI Workplace Productivity Assistant" },
+      { property: "og:title", content: "Dashboard — AI Workplace Productivity Assistant" },
       {
         property: "og:description",
         content:
-          "Generate professional emails, plan your day, and chat with an AI productivity assistant. Session-only, no signup required.",
+          "Your productivity toolkit: write emails, plan your day, and chat with an AI assistant.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Dashboard — AI Workplace Productivity Assistant" },
+      { name: "twitter:description", content: "Your productivity toolkit: write emails, plan your day, and chat with an AI assistant." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c1daef77-bf7c-49bc-b536-24f086e710ca/id-preview-7874b2dc--5ed2b484-0b43-4be2-8e84-675214149c2b.lovable.app-1784220788621.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/c1daef77-bf7c-49bc-b536-24f086e710ca/id-preview-7874b2dc--5ed2b484-0b43-4be2-8e84-675214149c2b.lovable.app-1784220788621.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
