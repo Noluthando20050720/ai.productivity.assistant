@@ -46,14 +46,14 @@ ${data.instructions ? `Additional instructions: ${data.instructions}` : ""}
 Return a polished subject line and email body. Keep it concise, well-structured, and ready to send. Use appropriate greeting and sign-off.`;
 
     try {
-      const { experimental_output } = await generateText({
+      const { output } = await generateText({
         model,
-        experimental_output: Output.object({
+        output: Output.object({
           schema: z.object({ subject: z.string(), body: z.string() }),
         }),
         prompt,
       });
-      return experimental_output;
+      return output;
     } catch (error) {
       if (NoObjectGeneratedError.isInstance(error)) {
         return { subject: data.subject, body: error.text ?? "" };
@@ -87,9 +87,9 @@ Rules:
 - Keep block titles concise.`;
 
     try {
-      const { experimental_output } = await generateText({
+      const { output } = await generateText({
         model,
-        experimental_output: Output.object({
+        output: Output.object({
           schema: z.object({
             blocks: z.array(
               z.object({
@@ -104,7 +104,7 @@ Rules:
         }),
         prompt,
       });
-      return experimental_output;
+      return output;
     } catch (error) {
       if (NoObjectGeneratedError.isInstance(error)) {
         return { blocks: [] };
